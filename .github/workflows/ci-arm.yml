@@ -85,22 +85,22 @@ jobs:
       docs-list-as-string: ${{ steps.selective-checks.outputs.docs-list-as-string }}
       excluded-providers-as-string: ${{ steps.selective-checks.outputs.excluded-providers-as-string }}
       force-pip: ${{ steps.selective-checks.outputs.force-pip }}
-      full-tests-needed: ${{ steps.selective-checks.outputs.full-tests-needed }}
-      has-migrations: ${{ steps.selective-checks.outputs.has-migrations }}
-      helm-test-packages: ${{ steps.selective-checks.outputs.helm-test-packages }}
-      helm-test-kubernetes-versions: ${{ steps.selective-checks.outputs.helm-test-kubernetes-versions }}
-      include-success-outputs: ${{ steps.selective-checks.outputs.include-success-outputs }}
-      individual-providers-test-types-list-as-strings-in-json: >-
-        ${{ steps.selective-checks.outputs.individual-providers-test-types-list-as-strings-in-json }}
-      kubernetes-combos: ${{ steps.selective-checks.outputs.kubernetes-combos }}
-      kubernetes-combos-list-as-string: >-
-        ${{ steps.selective-checks.outputs.kubernetes-combos-list-as-string }}
-      kubernetes-versions-list-as-string: >-
-        ${{ steps.selective-checks.outputs.kubernetes-versions-list-as-string }}
-      latest-versions-only: ${{ steps.selective-checks.outputs.latest-versions-only }}
-      mysql-exclude: ${{ steps.selective-checks.outputs.mysql-exclude }}
-      mysql-versions: ${{ steps.selective-checks.outputs.mysql-versions }}
-      # platform / runner-type are hardcoded per workflow file (this is the
+      تست‌های کامل مورد نیاز: $ { { steps.selective-checks.outputs.full-tests-needed } }
+      has-migrations : $ { { steps.selective-checks.outputs.has-migrations } }
+      helm-test-packages : $ { { steps.selective-checks.outputs.helm-test-packages } }
+      helm-test-kubernetes-versions : $ { { steps.selective-checks.outputs.helm-test-kubernetes-versions } }
+      include-success-outputs : $ { { steps.selective-checks.outputs.include-success-outputs } }
+      ارائه دهندگان-آزمون-انواع-لیست-به-صورت-رشته-در-json به صورت انفرادی : > -
+        $ { { steps.selective-checks.outputs.individual-providers-test-types-list-as-strings-in-json } }
+      کوبرنتیز-کامبوز : $ { { steps.selective-checks.outputs.kubernetes-combos } }
+      kubernetes-combos-list-as-string : > -
+        $ { { steps.selective-checks.outputs.kubernetes-combos-list-as-string } }
+      kubernetes-versions-list-as-string : > -
+        $ { { steps.selective-checks.outputs.kubernetes-versions-list-as-string } }
+      فقط آخرین نسخه‌ها : $ { { steps.selective-checks.outputs.latest-versions-only } }
+      حذف mysql : $ { { steps.selective-checks.outputs.mysql-exclude } }
+      نسخه‌های mysql : $ { { steps.selective-checks.outputs.mysql-versions } }
+      # platform / runner-type برای هر فایل گردش کار (این فایل) کدگذاری شده است.
       # ARM copy). The matching AMD copy lives in ci-amd.yml.
       platform: "linux/arm64"
       postgres-exclude: ${{ steps.selective-checks.outputs.postgres-exclude }}
